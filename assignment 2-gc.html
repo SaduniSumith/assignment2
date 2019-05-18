@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>assignment2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><br>Assignment II</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#Home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#Part1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Part 1</a>
+    <a href="#Part2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Part 2</a>
+    <a href="#Part3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Part 3</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Assiangment II</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="Home">
+    <h1 class="w3-jumbo"><b>Assignment II</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>By: Aleeza Arefeen and<br>Saduni Sumith.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://media1.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" style="width: 100%" onclick="onClick(this)" alt="hackerman">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Part 1 -->
+  <div class="w3-container" id="Part1" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Part 1.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div id="def"><h2 style="text-decoration:underline">body style</h2>
+      <p> All body text should be rendered at a size of 10pts, in the Verdana font (if possible),
+        <br> and with the color black and 14 points between lines.  If the user does not have the<br>
+        Verdana font installed, the list of fonts in the style sheet represents the order in which<br>the browser
+        should search for fonts to use: Geneva, then Arial, then Helvetica.
+        If the<br> user has none of those fonts, the browser will use whatever default sans-serif font is<br>
+        available. Additionally, the page should have left, right, and top margins of 5 points.)</p>
+  </div>
+    <div id="def" ><h2 style="text-decoration:underline">h1</h2>
+      <p> All font that size will be affected by whatever is added in this tag, unless a div tag is<br> created.
+      If the user does not have the Verdana font installed,
+      the list of fonts in the<br> style sheet will represent the order in which the browser
+      should search for fonts to<br> use: Geneva, then Arial, then Helvetica.
+      If the user has none of those fonts, the<br>browser will use whatever default sans-serif font is available.</p>
+  </div>
+  <div id="def"><h2 style="text-decoration:underline">p.subheader</h2>
+    <p> All text in the subheader class under the p element will be written in bold and colored<br>purple
+  </p>
+  </div>
+  <div id="def"><h2 style="text-decoration:underline">img</h2>
+    <p> All the images that are contained in the web page will have a padding of 3 points,<br> meaning that
+      there will be a 3 point space around the image. The images on the web<br> page will also be moved
+      to the right side of the page.</p>
+  </div>
+  <div id="def"><h2 style="text-decoration:underline">a</h2>
+    <p> All text written under the a tag will have no text decoration applied to it and will be<br> displayed
+       as a block, with a width of 30 as well as a height of 30.</p>
+  </div>
+  <div id="def"><h2 style="text-decoration:underline">a:link , a:visited</h2>
+    <p> Applies to all links that have and have not been visited; appearing
+  a baby blue colour</p>
+  </div>
+  <div id="def"><h2 style="text-decoration:underline">A:hover, a:active</h2>
+    <p> Applies to links that have been clicked on or are being hovered over, turning them a<br>light orange colour</p>
+  </div>
+  <div id="def"><h2 style="text-decoration:underline">div.footer</h2>
+    <p>Applies to where documentation of the website is placed, also known as a footer.
+  <br>Text under the dev.footer tag will have a font size of 9 points, will be written in
+  Italics <br>and will be placed in the center of the page. Text written here will also have a 30
+  <br>points of space around it and a 12 point space underneath one another.</p>
+  </div>
+  </div>
+
+  <!-- Part 2 -->
+  <div class="w3-container" id="Part2" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Part 2.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2 style="text-decoration:underline">Explain these lines.</h2>
+  </div>
+
+  <!-- Part 2 -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3><.link rel="stylesheet" type="text/css" href="style.css"/></h3>
+          <p class="w3-opacity">Linking Style Sheet</p>
+          <p>With this line of code, the user is able to link their css file into their html file. This is convenient because rather than having to do the css on the same html file, one can have two separate files and then combine them.</div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3><.img src="logo.gif" alt="BAWSI LOGO" title=”This is Bawsi’s Logo”/></h3>
+          <p class="w3-opacity">Add Image</p>
+          <p>This line adds an image/gif from the user’s files, which can also be seen by the file type (in this case: .gif). This line in particular adds the file logo.gif “Bawsi Logo”; however,  if logo does not appear the text Bawsi Logo is its alternate.</div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3><.p class="subheader"> BAWSI'S History<./p></h3>
+          <p class="w3-opacity">Create Subheader</p>
+          <p>This line of code creates a subheader located under the main paragraph, which is essentially a smaller heading.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Part 3 -->
+  <div class="w3-container" id="Part3" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Part 3.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div id="def"><h2 style="text-decoration:underline">Define a p class style rule.
+  Give the example html syntax of the p tag using the class style rule.</h2>
+  <p>The class attribute specifies one or more class names for an element,
+    which allows<br> you to combine several css classes for one html element.
+    <style>
+   .example {
+   color: black;
+   padding: 40px;
+   background-color: lightgreen;
+   }
+   </style>
+  <div class="example">
+    <p> Rules: <ul><li>Must begins with letter from a-z (all caps or lowercase )</ul></li>
+    <ul><li> Can be followed by any letter uppercase or<br> lower may have numbers from 0-9 hyphens and underscores</ul></li>
+  <ul><li> All values and case sensitive</ul></li><br> <p style="text-decoration:underline">An example would be:<br></p>
+  <.style><br>
+.city {<br>
+  background-color: tomato;<br>
+  color: white;<br>
+  padding: 10px;<br>
+} <br>
+<./style><br>
+
+<.h2 class="city">London<./h2><br>
+<.p>London is the capital of England.<./p>
+  </p>
+</div>
+
+    <div id="def"><h2 style="text-decoration:underline">Define a <.p id style rule.  Give the example html syntax of the
+   p tag using the id style rule.</h2>
+   <p>A p id style rule combines the function of a style tag with the id, which helps you pinpoint unique features that you want to add things to. An example would be:
+   </p>
+     <style>
+#HelloWorld {
+  background-color: lightgreen;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+
+<p id="HelloWorld">Hello World!</p>
+</p>
+ </div>
+ <div id="def"><h2 style="text-decoration:underline">How would you center everything on an entire page?</h2>
+   <p>In order to center everything on an entire page, one would have to use the center
+     tags (<.center>, <./center>). The center tag opening would go at the top of the code,
+     underneath the title, and the closing tag will be at the bottom of the code before the
+     closing html tag. All of the content in between will be centered, which in this case,
+     is the entire page.</p>
+   </div>
+    <h2 style="text-decoration:underline">How would you indent a single word and put a square bullet in front of
+      it?</h2><p>In order to indent a single word, you would use a style function called “text-indent”,<br>and then put the word
+      in an unordered list: <ul style="list-style-type:square"> <li> word </li> </ul> to put a bullet in front of it. However, that function will
+      merely add the default circle bullet, so<br> you would then have to insert a style inside the ul tag
+      bracket like so:<br> ul style =”list-style-type:square”>.</p>
+    </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Glunch</li>
+        <li class="w3-padding-16">Look of disdain or displesure</li>
+      </ul>
+    </div>
+
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Glumpy</li>
+        <li class="w3-padding-16">Sullen, Morose, Sulky</li>
+      </ul>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
